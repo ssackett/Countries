@@ -5,7 +5,7 @@ class Game {
 		Console console = System.console();
 		String answer = console.readLine("What is the capital of Australia? ");
 		String capital = "Canberra";
-		if (answer.equals(capital)) {
+		if (answer.equalsIgnoreCase(capital)) {
 			System.out.println("Correct!");
 		}
 		else {
