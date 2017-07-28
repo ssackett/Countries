@@ -16,7 +16,6 @@ class Game {
 		try (BufferedReader br = new BufferedReader(new FileReader("capitals.csv"));){
 			String line;
 			while ((line = br.readLine()) != null) {
-				total++;
 				String[] cols = line.split(",");
 				String country = cols[0];
 				String capital = cols[1];
@@ -31,6 +30,8 @@ class Game {
 				else {
 					System.out.println("No, the answer is " + capital);	
 				}
+
+				total++;
 			}
 		}
 	catch (FileNotFoundException e) {
